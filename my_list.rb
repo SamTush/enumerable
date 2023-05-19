@@ -7,7 +7,7 @@ class MyList
     @list = elements
   end
 
-  def each
-    @list.each { |element| yield element }
+  def each(&block)
+    @list.each(&block)
   end
 end
